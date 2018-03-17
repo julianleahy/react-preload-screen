@@ -8,8 +8,8 @@
 }
 
 /*
- each segment is a transparent box with just the 
- colored top border showing with has a circular radius.
+  each segment is a transparent box with just the 
+  colored top border showing with has a circular radius.
 */
 
 .Preload {
@@ -62,3 +62,25 @@
         transform: rotate(360deg);
     }
 }
+
+/*
+  two sepatate sections covering half the width of the screen
+*/
+.PreloadWrapper .PreloadSection {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #222222;
+    z-index: 998;
+    transform: translateX(0);
+}
+
+.PreloadWrapper .PreloadSection.PreloadLeft {
+    left: 0;
+}
+
+.PreloadWrapper .PreloadSection.PreloadRight {
+    right: 0;
+}
+
