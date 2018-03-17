@@ -84,3 +84,17 @@
     right: 0;
 }
 
+/*
+  When the page has loaded we need to add a surrounding div 
+  with the Loaded class which we can do by passing props
+*/
+
+.Loaded .PreloadWrapper .PreloadSection.PreloadLeft {
+    transform: translateX(-100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.Loaded .PreloadWrapper .PreloadSection.PreloadRight {
+    transform: translateX(100%);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
