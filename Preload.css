@@ -9,7 +9,7 @@
 
 /*
   each segment is a transparent box with just the 
-  colored top border showing with has a circular radius.
+  colored top border showing which has a circular radius.
 */
 
 .Preload {
@@ -64,7 +64,7 @@
 }
 
 /*
-  two sepatate sections covering half the width of the screen
+  two separate sections covering half the width of the screen
 */
 .PreloadWrapper .PreloadSection {
     position: fixed;
@@ -86,7 +86,8 @@
 
 /*
   When the page has loaded we need to add a surrounding div 
-  with the Loaded class which we can do by passing props
+  with the `Loaded` class which we can do by passing props
+  when the app component mounts
 */
 
 .Loaded .PreloadWrapper .PreloadSection.PreloadLeft {
